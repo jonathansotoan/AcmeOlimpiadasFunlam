@@ -1,0 +1,68 @@
+<div class="drag-drop-directive shadow full-height clearfix">
+
+	<!--Descripción-->
+	<div class="block">
+		<p class="clearfix">
+		<div class="help">
+		<img src="../resources/common/iconoayuda.png" alt="ícono mouse"/>
+		<span class="tooltip8">
+		<img  class="img-rounded" style="width:100%;" src="../resources/common/ayuda.gif"/>
+		</span>
+		</div>
+		<div class="lastear">
+		<img ng-show="audio" class="icon-play-description" src="../resources/common/icono-oido.png" alt="ícono escuchar" play="audio-instruction" on="click"/>
+		<span class="tooltip6"><img  class="img-rounded" style="width:100%;" src="../resources/common/click.gif"/>
+        </span>
+		</div>
+		<div class="select">
+		<img src="../resources/common/icono seleccion.png" alt="ícono mouse"/>
+		<span class="tooltip6"><img  class="img-rounded" style="width:100%;" src="../resources/common/click.gif"/>
+        </span>
+		</div>
+		<span>{{ description }}</span>
+		</p>
+	</div>
+
+			
+	<!--audio-->
+	<audio id="audio-instruction" preload="auto">
+		<source src="{{ $root.resources + '/'  + audio + '.mp3' }}" type="audio/mpeg">
+	</audio>
+
+	<div class="block-content vertical-align">
+
+		<div class="vertical-align-inner">
+			
+			<div class="text-box">
+				<div class="items-container">
+					<div class="words-items bg-1" ng-repeat="item in items" data-drag="true" data-jqyoui-options="{ revert: 'invalid', helper: '' ,connectToSortable: '.words-items' }" ng-show="item" ng-model="items"
+                        jqyoui-draggable="{index: {{$index}}, placeholder: 'true'}">{{ item }}</div>	
+			</div> <!--/.text-box-->
+
+			</div>
+			<div class="complete-container bd-1"  data-drop="true" ng-model="targets" jqyoui-droppable="{ onDrop: 'dropCallback(target)' }" aria-disabled="false" data-jqyoui-options="{connectWith: '.words-items' }" >
+				<div class="wid-100 bg-1 fc-W center-items" style="min-height:50px;padding:10px;"><div style="float:left;display: inline-block;margin-right:5px;"ng-repeat="word in targets">{{ word }}</div></div>
+				<!-- <div class="words-items bg-1" ng-show="targets" ng-repeat="target in targets" data-drag="true" data-jqyoui-options="{ revert: 'invalid', helper: '',connectToSortable: '.words-items' }" ng-model="targets"jqyoui-draggable="{index: {{$index}}, placeholder: '{{preserveOriginal}}'}">{{ target }}</div> -->
+				<ul type="none" class='mysortable' ui:sortable ui:options="{connectWith:'.mysortable'}" ng:model="targets">
+			        <li ng:repeat="target in targets" ng:model="targets" class="words-items bg-1">{{ target }}</li>
+			    </ul>
+					
+			</div>
+
+			</div>
+				<button ng-click="verify()"  style="float: right;"class="btn-primary">Comprobar</button>
+			</div>
+		</div>
+	</div>
+		
+
+</div> <!--/.row.liz-complete-words-->
+
+<!-- CALIFICATIONS -->
+<div ng-show="success">
+	<div data-congratulations></div>
+</div>
+
+<div ng-show="failure">
+	<div data-failure></div>
+</div>

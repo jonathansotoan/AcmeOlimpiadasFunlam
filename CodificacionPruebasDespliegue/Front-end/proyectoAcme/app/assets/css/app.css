@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es" ng-app="esp201">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="../css/app.css">
+
+</head>
+<body>
+	<!--[if lt IE 8]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+	<!-- Solo se cambia la clase según la actividad -->
+	<div id="container" class="esp" ng-include src="'../views/common/include.html'"></div>
+
+
+	<!--templates-->
+	<script type="text/ng-template" id="con1">
+		<show-description 
+			options="data"
+			title="¿Qué es describir?"
+			description="Describir es representar la realidad mediante palabras e indicar las características que le son propias. El saber describir nos ayuda a caracterizar lo que hay y pasa a nuestro alrededor,además nos permite comunicarnos mejor con las personas.">
+		</show-description>
+	</script>
+
+	
+
+	<script type="text/ng-template" id="con2">
+		<click-images 
+			options="data"
+			description="Cuando describimos debemos tener en cuenta el aspecto físico de lo cual estamos describiendo: personas, animales, objetos o situaciones."
+			instruction="Haz clic sobre las imágenes y descubre su descripción"
+			title="Descripción física"
+			audio="C2">
+		></click-images>
+	</script>
+
+	<script type="text/ng-template" id="act1">
+		<complete-inputs-description 
+			options="options"
+			instruction="Haz clic sobre cada recuadro y escribe el nombre que le corresponde a cada personaje de acuerdo a las descripciones. "
+			audio="A1"
+			title-block="Descripciones.">
+		</complete-inputs-description>
+	</script>
+
+	<script type="text/ng-template" id="act2-1">
+		<complete-words  options="options" audio="A2" description="Haz clic en cada línea y completa la descripción del animal."></complete-words>	
+	</script>
+
+	<script type="text/ng-template" id="act2-2">
+		<complete-words  options="options" audio="A2" description="Haz clic en cada línea y completa la descripción del animal."></complete-words>	
+	</script>
+	
+	<script type="text/ng-template" id="act2-3">
+		<complete-words  options="options" audio="A2" description="Haz clic en cada línea y completa la descripción del animal."></complete-words>	
+	</script>
+
+	<script type="text/ng-template" id="act3-1">
+		<complete-words-wi  options="options" audio="A3-1" description="Lee cada descripción y en la línea termina de escribir el nombre del elemento al cual se hace referencia."></complete-words-wi>	
+	</script>
+	
+	<script type="text/ng-template" id="act3-2">
+		<complete-words-wi  options="options" audio="A3-2" description="Lee cada descripción y en la línea termina de escribir el nombre del elemento al cual se hace referencia."></complete-words-wi>	
+	</script>
+	
+	<script type="text/ng-template" id="act3-3">
+		<complete-words-wi  options="options" audio="A3-3" description="Lee cada descripción y en la línea termina de escribir el nombre del elemento al cual se hace referencia."></complete-words-wi>	
+	</script>
+
+	<script type="text/ng-template" id="act4-1">
+		<group-complete-words  options="options" audio="A4-1" description="Lee cada descripción, escribe en la línea el lugar al que  esta hace referencia."></group-complete-words>	
+	</script>
+
+	<script type="text/ng-template" id="act4-2">
+		<letter-soup 
+			audio="a1"	
+			description="Busca las palabras del listado de la derecha escritas en la sopa de letras. Cuando encuentres una presiona la primera y última letra de la palabra encontrada . Las palabras pueden estar en forma horizontal o vertical."
+			options="data">
+		</letter-soup>
+	</script>
+
+	<script type="text/ng-template" id="act5-1">
+		<complete-inputs-free  options="options" audio="A5" description="Haz clic sobre el recuadro en blanco y escribe la descripción de la imagen."></complete-inputs-free>	
+	</script>
+
+	<script type="text/ng-template" id="act5-2">
+		<complete-inputs-free  options="options" audio="A5" description="Haz clic sobre el recuadro en blanco y escribe la descripción de la imagen."></complete-inputs-free>	
+	</script>
+
+	<script type="text/ng-template" id="act5-3">
+		<complete-inputs-free  options="options" audio="A5" description="Haz clic sobre el recuadro en blanco y escribe la descripción de la imagen."></complete-inputs-free>	
+	</script>
+
+	<script type="text/ng-template" id="act6">
+		<complementary  options="options" audio="A6" description="Haz clic sobre los libros, y visitarás una página web en la que podrás repasar los contenidos vistos en esta lección."></complementary>	
+	</script>
+
+
+	<script src="../scripts/vendor.js"></script>
+	<script src="../scripts/app.js"></script>
+
+	<script>
+		// Requerido para activar el autoreload
+		window.brunch = window.brunch || {};
+	</script>
+
+</body>
+</html>
+

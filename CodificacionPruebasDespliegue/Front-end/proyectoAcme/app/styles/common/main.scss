@@ -1,0 +1,905 @@
+@import "../bourbon/bourbon.scss";
+@import "../common/_mixins.scss";
+@import "../common/themes.scss";
+@import "animations";
+
+// *****************************************************************************
+// variables
+// *****************************************************************************
+$screen-xs-min: 480px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+
+// *****************************************************************************
+// fuentes
+// *****************************************************************************
+@font-face {
+	font-family: 'century_gothic';
+	src: url('fontface/gothic-webfont.eot');
+	src: url('fontface/gothic-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fontface/gothic-webfont.woff') format('woff'),
+	url('fontface/gothic-webfont.ttf') format('truetype'),
+	url('fontface/gothic-webfont.svg#century_gothicregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'century_gothicbold';
+	src: url('fontface/gothicb-webfont.eot');
+	src: url('fontface/gothicb-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fontface/gothicb-webfont.woff') format('woff'),
+	url('fontface/gothicb-webfont.ttf') format('truetype'),
+	url('fontface/gothicb-webfont.svg#century_gothicbold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'little_daysregular';
+  src: url('fontface/little_days-webfont.eot');
+  src: url('fontface/little_days-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fontface/little_days-webfont.woff') format('woff'),
+  url('fontface/little_days-webfont.ttf') format('truetype'),
+  url('fontface/little_days-webfont.svg#little_daysregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// *****************************************************************************
+// Body y HTML - se usa height 100% para acoplar los elementos a lo alto
+// *****************************************************************************
+body, html{
+	height: 100%;
+	background-color: red!important;
+	/* overflow-x: hidden; */
+
+	// needs latest Compass, add '@import "compass"' to your scss
+	background-color: #fcfff4; // Old browsers
+	@include background-image(radial-gradient(center, ellipse cover,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%));
+
+
+}
+
+body{
+	font-size: 16px; // Requerido para el uso de EM
+	display:inline-block;
+	width:100%;
+	max-width: 1500px;
+
+	
+
+}
+
+
+
+// *****************************************************************************
+// container
+// *****************************************************************************
+#container {
+	position: relative;
+	max-width: 1500px;
+	min-height: 100%;
+	font-family: "century_gothicbold";
+	margin: 0 auto;
+}
+
+// *****************************************************************************
+// Header
+// *****************************************************************************
+.nav-container,.navbar{
+	min-height: 75px;
+
+	.navbar-left,.navbar-right{
+		padding-top: 10px;
+	}
+
+	.navbar-default{
+		@extend .bd-1;
+	}
+
+	.navbar-brand{
+		width: 10%;
+		background-size:100%;
+		cursor:pointer;
+		background-image: url(../resources/common/logo2.png);
+		@include transition(all 0.4s ease-out);
+
+	}
+
+	
+	.navbar-toggle{
+
+		margin-top: 20px;
+		background: transparent!important;
+
+		.icon-bar{
+
+			@extend .bg-1;
+
+		}
+
+		&:hover{
+
+			@extend .bd-1;
+			background: transparent!important
+		}
+	}
+
+	
+
+		.navbar-brand{
+			width: 200px;
+			height: 65px;
+			margin-top: 2px;
+			cursor:pointer;
+			@include transition(all 0.4s ease-out);
+
+		}
+	
+
+		@media(min-width: $screen-md-min){ 
+			
+			padding-left: 10%; 
+			padding-right: 10%;
+		}
+
+		.open .dropdown-toggle{
+			@extend .bg-1 ;
+		}
+
+		.open ul li a{
+			
+			@extend .fc-1 ;
+
+			&:hover{
+				@extend .fc-W;
+			}
+		}
+
+		ul li a{
+			
+			
+			height: 75px;
+			line-height: 50px;
+			@extend .fc-W;
+
+			&:hover{
+				@extend .bg-1 ;
+			}
+
+			&:focus{
+				@extend .bg-1 ;
+			}
+
+		}
+
+		.active{
+			a{
+				@extend .bg-1 ;
+			}
+		}
+
+	
+	
+	
+
+	// Este va a la derecha del header
+	.lesson-logo{
+		
+		float: right;
+		height: 100%;
+		background-size: 100% 100%;
+		
+
+		img{
+			background-size: 100% 100%;
+			max-height: 3em;
+			@media(min-width: $screen-md-min){ max-height: 7em; }
+		}
+
+	}
+
+	
+	// Para la alineación vertical dentro de los elementos
+	.vertical-align{
+		position: relative;
+		height: calc(100% - 8em);
+	}
+
+	.vertical-align-inner{
+		// Truco para hacer la alineación absoluta
+		margin: auto;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 15%;
+		bottom: 0;
+
+		height: 200px;
+	}
+}
+
+// Cuando el botón de siguiente esté deshabilitado
+#next.disabled{
+	cursor: default;
+	h2{
+		color: #ededed !important;
+	}
+
+	#icon-next{
+		fill: #ededed;
+	}
+
+	&:hover{
+		background: transparent !important;
+	}
+}
+
+
+// *****************************************************************************
+// Main-Container
+// *****************************************************************************
+#main-container{
+	position: absolute;
+	left: 0%;
+	height: calc(100% - 8em);
+	width: 100%;
+	z-index: 3;
+
+	[ng-view]{
+		height: 100%;
+		width:100%;
+	}
+}
+
+// *****************************************************************************
+// Grupos
+// *****************************************************************************
+.icon-group {
+	width: 33%;
+	padding: 2%;
+	margin-top: 30px;
+	float: left;
+	cursor: pointer;
+	@include transition(all 0.4s ease-out);
+
+	&:hover {
+		margin-top: -5px;
+
+	}
+}
+
+// *****************************************************************************
+// Otros Elementos
+// *****************************************************************************
+.block{
+	font-size: 1.3em;
+	padding: 10px;
+	font-family: 'century_gothic';
+
+
+	h1{
+		font-size: 1.3em;
+		margin: 0;
+		display: inline-block;
+	}
+
+	h3{
+		font-size: 2.3em;
+		margin: 0;
+		display: inline-block;
+		
+	}
+	
+	img{
+		width: 2.7em;
+		float: left;
+		margin-right: 8px;
+	}
+
+	p{
+		margin: 0;
+	}
+
+	// Este es el que va al fondo de las vistas
+	&.bottom{
+		margin-top: 10px;
+		float: right;
+		min-width: 40%;
+	}
+}
+
+.block-content{
+	padding: 20px;
+	font-family: 'century_gothic';
+
+	.block-content{
+		border: 2px solid #000;	
+		border-top-width: 0px; // Eliminamos el borde de arriba
+		font-size: 1.4em;
+		margin-bottom: 20px;
+	}
+}
+
+.btn-primary{
+	display: inline-block;
+  background: #d44b29;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  border: none;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 32px;
+  padding: 10px;
+  cursor: pointer!important;
+  outline: none;
+  @include transition(all 0.3s ease-in);
+
+  &.disabled{
+    background: #8f8f8f !important;
+    cursor: default;
+  }
+}
+
+.input-primary{
+	width: 100%;
+	border: 3px solid;
+}
+	
+.btn-primary-farewell{
+	position: absolute;
+	top:60%;
+	left:15%;
+	display: inline-block;
+	background: #d44b29;
+	color: #ffffff !important;
+	text-decoration: none !important;
+	border: none;
+	margin-top: 20px;
+	width: 30%;
+	max-width: 400px;
+	font-size: 32px;
+	padding: 10px;
+	cursor: pointer;
+	@include transition(all 0.3s ease-in);
+	@include animation(easy_in 2s ease-in);
+	
+	&.disabled{
+		background: #dddddd;
+		cursor: default;
+	}
+}
+
+table.table-primary {
+
+	th {
+		color: #fff;
+	}
+
+	td, th {
+		border: 2px solid #000;
+		padding: 4px 8px;
+	}
+
+}
+
+h1{
+		font-size: 1.3em;
+		margin: 0;
+		display: inline-block;
+		
+}
+
+h2{
+		font-size: 1.1em;
+		font-family: "century_gothic";
+		
+}
+
+h3{
+	font-size: 1.0em;
+	margin: 0;
+	display: inline-block;
+	
+}
+pre{
+	font-family: "century_gothic";
+}
+
+// *****************************************************************************
+// Modals - Usados para mostrar las pantallas de felicitación, vuelve a intentar, etc
+// *****************************************************************************
+.overlay {
+	width: 9000px;
+	background: rgba(0, 0, 0, 0.8);
+	height: 9000px;
+	position: fixed;
+	top: 0px;
+	z-index: 150 !important;
+	left: 0px;
+	@include animation(fadeIn 0.5s ease-in );
+}
+
+.layer-cong{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+#kid-cong{
+	position: absolute;
+	top: 105%;
+	left: 0%;
+	@include animation(fade_up2 3s ease-in  infinite);
+}
+#kid-cong-2{
+	position: absolute;
+	top: 105%;
+	left: 56.5%;
+	@include animation(fade_up1 3s ease-in .5s infinite);
+}
+#sad-face{
+	position: absolute;
+	left: 0%;
+	@include animation(fade_up3 3s ease-in  infinite);
+}
+.animation-container{
+	position: absolute;
+	top: 27%;
+	left: 2.5%;
+	width: 95%;
+	height: 46%;
+}
+.animation-container-failure{
+	position: absolute;
+	top: 33%;
+	left: 2.5%;
+	width: 95%;
+	height: 46%;
+}
+.fade_in_easy{
+	@include animation(fadeIn 0.3s ease-in);
+}
+.fade_in{
+	opacity: 0;
+	@include animation(fade_in1 1s ease-in infinite);
+}
+
+.fade_in2{
+	opacity: 0;
+	@include animation(fade_in1 1.5s ease-in 1s infinite);
+}
+
+.fade_in3{
+	opacity: 0;
+	@include animation(fade_in1 2s ease-in 2s infinite);
+}
+.fade_in4{
+	opacity: 0;
+	@include animation(fade_in1 3s ease-in 1.5s infinite);
+}
+.fade_up1{
+	@include animation(fade_up1 .5s ease-in 1.5s infinite);
+}
+.congratulations-button{
+	position: absolute;
+	width: 100%;
+	bottom: 25px;
+	left: 0px;
+	
+}
+
+
+.course-modal {
+	position: fixed;
+	margin: auto;
+	top: 0; left: 0; right: 0; bottom: 0;
+	background: #ffffff;
+	z-index: 175;
+	max-width: 598.571px;
+	height: 500px;
+	width: 100%; 
+	box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+
+	.course-modal-title{
+		padding: 10px 20px;
+		font-family: 'century_gothic';
+		font-weight: bold;
+		font-size: 40px;
+		color: #ffffff;
+	}
+
+	.course-modal-content{
+		padding: 10px 20px 25px;
+		font-family: 'century_gothic';
+		font-size: 30px;
+		width: auto;
+		text-align: center;
+
+		p{
+			margin: 0;
+		}
+	}
+	
+}
+
+
+// *****************************************************************************
+// Útiles
+// *****************************************************************************
+.cursor-pointer{
+	cursor:pointer;
+}
+
+.text-center{
+	text-align: center;
+}
+.panel-XS{
+
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+.panel-S{
+
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
+.panel-M{
+
+	padding-top:100px;
+	padding-bottom:100px;
+	display: -webkit-box;
+}
+
+.text-align-auto{
+	text-align: auto;
+}
+
+.fc-W{
+	color: white!important;
+}
+
+.fs-20{
+	font-size: 20px;
+}
+.fs-15{
+	font-size: 15px;
+}
+
+.full-height{
+	min-height: 100%;
+}
+.wid-25{
+	width: 50%!important;
+	display:inline-block;
+}
+
+.wid-50{
+	width: 50%!important;
+	display:inline-block;
+}
+
+.wid-75{
+	width: 75%!important;
+	display:inline-block;
+}
+
+.wid-100{
+	width: 100%!important;
+}
+
+.inlineb{
+	display: inline-block!important;
+}
+
+.float-right{
+	float: right!important;
+}
+
+.float-left{
+	float: left!important;
+}
+
+.over-flow-hidden{
+	overflow: hidden;
+
+}
+
+.pos-relative{
+	position: relative
+}
+
+.v-align{
+
+	.v-align-inner{
+
+	}
+}
+.margin-bottom{
+	margin-bottom: 20px;
+}
+
+.align-children {
+	@include align-children;
+}
+
+.no-border{
+
+	border:none!important;
+}
+
+.no-padding{
+
+	padding: 0!important;
+}
+.no-margin{
+
+	margin: 0!important;
+}
+
+.no-radius{
+
+	border-radius: 0%!important;
+}
+
+.border-3px{
+	border: 3px solid
+}
+
+.center-items{
+
+	display: flex!important;//centrar verticalmente
+	align-items: center;//centrar verticalmente
+	justify-content: center;//centrar verticalmente
+}
+
+.border-radius{
+
+	border-radius: 50%;
+}
+
+.is-true{
+	background: rgba(0, 255, 10, 0.23)!important;
+}
+
+.is-false{
+	background: rgba(0, 25, 211, 0.23)!important;
+}
+
+.is-disable{
+	background: rgba(170, 170, 170, 0.23)!important;
+}
+
+.face{
+    margin-left: -72px;
+    width: 124px;
+    top: 0;
+    left: 50%;
+    z-index: 6;
+ }
+
+.message-box-R{
+
+	&:after {
+				content: "";
+				position: absolute;
+				/* Pushed down half way, will get pulled back up half height of triangle
+				   ensures centering if font-size or line-height changes */
+				top: 30%;
+				width: 0;
+				height: 0;
+			
+				/* Smaller and different position triangle */
+				right: -60px;
+				width: 0px;
+				height: 0px;
+				border-style: solid;
+				border-width: 50px 0 50px 100px;
+				@extend .border-color-R
+			}
+}
+
+.message-box-L{
+
+	&:after {
+				content: "";
+				position: absolute;
+				/* Pushed down half way, will get pulled back up half height of triangle
+				   ensures centering if font-size or line-height changes */
+				top: 30%;
+				width: 0;
+				height: 0;
+			
+				/* Smaller and different position triangle */
+				left: -60px;
+				width: 0px;
+				height: 0px;
+				border-style: solid;
+				border-width: 50px 100px 50px 0;
+				@extend .border-color-L
+			}
+}
+
+.message-box-T{
+
+	z-index: 10;
+
+	&:after {
+				content: "";
+				z-index: -1;
+				position: absolute;
+				/* Pushed down half way, will get pulled back up half height of triangle
+				   ensures centering if font-size or line-height changes */
+				bottom: 100%;
+				width: 0;
+				height: 0;
+			
+				/* Smaller and different position triangle */
+				left: 60%;
+				width: 0px;
+				height: 0px;
+				border-style: solid;
+				border-width: 0px 50px 100px 50px;
+				@extend .border-color-T
+			}
+}
+
+.arrow-R{
+
+	&:after {
+				content: "";
+				position: absolute;
+				/* Pushed down half way, will get pulled back up half height of triangle
+				   ensures centering if font-size or line-height changes */
+				top: -50%;
+				width: 0;
+				height: 0;
+			
+				/* Smaller and different position triangle */
+				left: 100%;
+				width: 0px;
+				height: 0px;
+				border-style: solid;
+				border-width: 50px 0 50px 100px;
+				@extend .border-color-R;
+			}
+}
+
+.arrow-L{
+	position:relative;
+
+	&:after {
+				content: "";
+				position: absolute;
+				/* Pushed down half way, will get pulled back up half height of triangle
+				   ensures centering if font-size or line-height changes */
+				top: -50%;
+				width: 0;
+				height: 0;
+			
+				/* Smaller and different position triangle */
+				right: 100%;
+				width: 0px;
+				height: 0px;
+				border-style: solid;
+				border-width: 50px 100px 50px 0;
+				@extend .border-color-L;
+			}
+}
+
+.arrow-B{
+
+	&:after {
+				content: "";
+				position: absolute;
+				/* Pushed down half way, will get pulled back up half height of triangle
+				   ensures centering if font-size or line-height changes */
+				top: 100%;
+				width: 0;
+				height: 0;
+			
+				/* Smaller and different position triangle */
+				right: 40%;
+				width: 0px;
+				height: 0px;
+				border-style: solid;
+				border-width: 30px 30px 0 30px;
+				@extend .border-color-B;
+			}
+}
+
+
+// *****************************************************************************
+// Despedida
+// *****************************************************************************
+.img-farewell{
+	height: 100%;
+	background-size: 100% 100%;
+}
+
+#farewell-kid{
+	position: absolute;
+	top: -5%;
+	left: 42%;
+	 @include animation(kidout2 1s ease-in);
+}
+
+.farewell-text{
+	font-family: 'century_gothicbold';
+	
+	tspan{
+		font-family: 'century_gothicbold';
+	}
+}
+
+#congratulations-modal{
+	button{
+		margin-top: 37px;
+	}
+}
+
+.farewell-box-container{
+	position: absolute;
+	top: 5%;
+	width: 70%;
+	height: 70%;
+	@include animation(easy_in 1.5s ease-in);	
+}
+
+#farewell-box-text{
+	position: absolute;
+	color: white;
+	font-size: 1.5em;
+	top: 13%;
+	left: 13%;
+	width: 60%;
+	height: 40%;
+	text-align: center;
+	vertical-align:text-bottom;
+	line-height: 1em;
+	/* @include transform(rotate(-12deg)); */
+
+		
+}
+
+// *****************************************************************************
+// Animaciones 
+// *****************************************************************************
+.scale1{
+	@include animation(scale1 0.3s ease-in);
+}
+
+.click1{
+	@include animation(click1 0.2s ease-in);
+}
+.width-up{
+	@include animation(width_up 0.5s ease-in forwards);
+}
+.width-up2{
+	@include animation(width_up2 0.5s ease-in forwards);
+}
+
+// *****************************************************************************
+// Íconos de respuestas (buenas y malas)
+// *****************************************************************************
+.right-answer{
+  background: url('../resources/common/icon_right.png') no-repeat;
+}
+
+.wrong-answer{
+  background: url('../resources/common/icon_wrong.png') no-repeat;
+}
+
+// *****************************************************************************
+// competencias
+// *****************************************************************************
+.icon-play-description{
+	cursor: pointer!important;
+	width: 2.7em;
+	float: left;
+	margin-right: 8px;
+}

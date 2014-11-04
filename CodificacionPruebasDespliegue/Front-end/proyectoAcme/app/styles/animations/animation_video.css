@@ -1,0 +1,22 @@
+.liz-animation-video .animationVideoRow {
+  padding: 50px 80px;
+  position: relative;
+}
+.liz-animation-video .animationVideoRow .animationVideo > video {
+  width: 74%;
+  display: table;
+  margin: auto;
+}
+.liz-animation-video .animationVideoRow .animationVideoBtnCont {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+}
+.liz-animation-video .animationVideoRow .animationVideoBtnCont .animationVideoBtn {
+  border: 2px solid #005300 !important;
+  background-color: #009500 !important;
+  color: #FFFFFF !important;
+  min-width: 120px;
+  font-size: 20px;
+  padding: 8px;
+}

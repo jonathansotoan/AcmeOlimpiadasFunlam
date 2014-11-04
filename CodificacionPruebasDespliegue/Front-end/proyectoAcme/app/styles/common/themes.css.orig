@@ -1,0 +1,995 @@
+.nat .header {
+  background: #009500;
+}
+.nat #next:hover, .nat #prev:hover {
+  background-color: rgba(182, 243, 182, 0.5);
+}
+.nat #next h2, .nat #prev h2 {
+  color: #009500;
+}
+.nat #icon-back, .nat #icon-next {
+  fill: #009500;
+  opacity: 1;
+}
+.nat .shadow {
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset rgba(0, 0, 0, 0.12) 0 0px 0, rgba(0, 0, 0, 0.3) 0 1px 2px, #009500 0 1px 10px;
+}
+.nat .lesson-logo img {
+  background-image: url("../resources/common/icononat.png");
+}
+<<<<<<< HEAD
+=======
+.nat .farewell-modal {
+  background: white url("..");
+}
+>>>>>>> 1ec9979d5558503f32f0e757421a2c0d0f9777d7
+.nat .block {
+  background: #009500;
+}
+.nat .block-content {
+  border-color: #009500;
+}
+.nat .btn-primary, .nat .btn-primary-farewell {
+  background: #009500;
+}
+.nat .btn-primary:hover, .nat .btn-primary:active, .nat .btn-primary-farewell:hover, .nat .btn-primary-farewell:active {
+  background: #005300;
+}
+<<<<<<< HEAD
+=======
+.nat .input-primary {
+  border-color: #009500;
+}
+>>>>>>> 1ec9979d5558503f32f0e757421a2c0d0f9777d7
+.nat .course-modal-title {
+  background: #009500;
+}
+.nat .course-modal-content {
+  color: #009500;
+}
+.nat #farewell-box {
+  background-image: url("../resources/common/boxnat.png");
+}
+.nat #farewell-kid {
+  background-image: url("../resources/common/kidnat.png");
+}
+<<<<<<< HEAD
+.nat .liz-complete-letters .item
+input[type=text],
+.nat .liz-complete-words .item
+input[type=text],
+.nat .liz-complete-words-wi .item
+input[type=text],
+.nat .liz-complete-inputs-free .item
+input[type=text] {
+  border-bottom-color: #009500;
+}
+.nat .liz-complete-letters .item
+input[type=text]:focus,
+.nat .liz-complete-words .item
+input[type=text]:focus,
+.nat .liz-complete-words-wi .item
+input[type=text]:focus,
+.nat .liz-complete-inputs-free .item
+input[type=text]:focus {
+  border-bottom-color: #005300;
+  background: #005300;
+}
+.nat .liz-complete-letters .complete-container,
+.nat .liz-complete-words .complete-container,
+.nat .liz-complete-words-wi .complete-container,
+.nat .liz-complete-inputs-free .complete-container {
+  border-color: #009500 !important;
+}
+.nat .liz-complete-letters .complete-container .input-container,
+.nat .liz-complete-words .complete-container .input-container,
+.nat .liz-complete-words-wi .complete-container .input-container,
+.nat .liz-complete-inputs-free .complete-container .input-container {
+  border-bottom-color: #009500;
+}
+.nat .liz-complete-letters .complete-container input:focus,
+.nat .liz-complete-letters .complete-container textarea[type=text]:focus,
+.nat .liz-complete-words .complete-container input:focus,
+.nat .liz-complete-words .complete-container textarea[type=text]:focus,
+.nat .liz-complete-words-wi .complete-container input:focus,
+.nat .liz-complete-words-wi .complete-container textarea[type=text]:focus,
+.nat .liz-complete-inputs-free .complete-container input:focus,
+.nat .liz-complete-inputs-free .complete-container textarea[type=text]:focus {
+  border-color: #009500 !important;
+  color: #009500;
+  /* background: $color2; */
+}
+.nat .liz-complete-letters .letters .syllable strong,
+.nat .liz-complete-words .letters .syllable strong,
+.nat .liz-complete-words-wi .letters .syllable strong,
+.nat .liz-complete-inputs-free .letters .syllable strong {
+=======
+.nat .liz-complete-letters .item input[type=text] {
+  border-bottom-color: #009500;
+}
+.nat .liz-complete-letters .item input[type=text]:focus {
+  border-bottom-color: #005300;
+  background: #005300;
+}
+.nat .liz-complete-letters .letters .syllable strong {
+>>>>>>> 1ec9979d5558503f32f0e757421a2c0d0f9777d7
+  color: #009500;
+}
+.nat .liz-choose-items .letter {
+  color: #009500;
+}
+.nat .liz-choose-items .letter:hover {
+  background: #009500;
+}
+.nat .liz-pairs * {
+  border-color: #009500 !important;
+}
+.nat .liz-pairs strong {
+  color: #009500;
+}
+.nat .liz-complete-inputs .item,
+.nat .liz-complete-inputs input,
+.nat .liz-complete-inputs-description .item,
+.nat .liz-complete-inputs-description input {
+  border-color: #009500 !important;
+  color: #009500 !important;
+}
+.nat .liz-complete-inputs strong,
+.nat .liz-complete-inputs strong2,
+.nat .liz-complete-inputs-description strong,
+.nat .liz-complete-inputs-description strong2 {
+  color: #009500 !important;
+}
+.nat .liz-complete-inputs .block-content,
+.nat .liz-complete-inputs-description .block-content {
+  border-color: #009500 !important;
+}
+.nat .liz-complete-inputs .input-group,
+.nat .liz-complete-inputs-description .input-group {
+  border-color: #009500 !important;
+}
+.nat .liz-complete-inputs .input-group .input-group-addon,
+.nat .liz-complete-inputs-description .input-group .input-group-addon {
+  background: #009500 !important;
+}
+.nat .liz-complete-inputs .input-group input[type=text],
+.nat .liz-complete-inputs-description .input-group input[type=text] {
+  color: #009500 !important;
+}
+.nat .liz-one-group .target {
+  border-color: #009500 !important;
+}
+.nat .liz-drag-drop-mark .target {
+  border-color: #009500 !important;
+}
+.nat .liz-multiple-mark .target {
+  border-color: #009500 !important;
+}
+.nat .liz-puzzle1 .puzzle1-canvas {
+  border-color: #009500;
+}
+.nat .liz-puzzle2 .puzzle2-canvas, .nat .liz-puzzle2 .item {
+  border-color: #009500 !important;
+}
+.nat .liz-puzzle2 .item {
+  background: rgba(182, 243, 182, 0.5);
+}
+.nat .liz-puzzle4 .item:hover {
+  color: #009500;
+}
+.nat .liz-puzzle4 .target {
+  box-shadow: 0px 0px 0px 3px #009500;
+}
+.nat .liz-puzzle4 .target-item {
+  background-color: rgba(182, 243, 182, 0.5);
+}
+.nat .liz-multiple-selection .item {
+  border-color: #009500;
+}
+.nat .liz-sound-group .group {
+  border-color: #009500;
+}
+.nat .liz-drop-out .group {
+  border-color: #009500;
+}
+.nat .liz-compare-sample .group {
+  border-color: #009500;
+}
+.nat .liz-compare-sample .sample {
+  background: rgba(182, 243, 182, 0.5);
+}
+.nat .liz-count-elements .number {
+  background: #009500;
+}
+.nat .liz-count-elements .sortable {
+  border-color: #009500;
+}
+.nat .liz-count-elements2 .item input[type=text] {
+  border-color: #009500 !important;
+}
+.nat .liz-sequences .sequence, .nat .liz-sequences .sequence-item {
+  border-color: #009500;
+}
+.nat .liz-group-inputs input[type="text"] {
+  border-color: #009500;
+}
+<<<<<<< HEAD
+=======
+.nat .liz-pairs-inputs * {
+  border-color: #009500;
+}
+.nat .liz-pairs-inputs *:focus {
+  background: #009500;
+}
+>>>>>>> 1ec9979d5558503f32f0e757421a2c0d0f9777d7
+.nat .click-images .item p strong {
+  color: #009500;
+}
+.nat .liz-show-parts .item-title {
+  background: #009500;
+}
+.nat .liz-show-concepts .inner-item {
+  background: #009500;
+}
+.nat .liz-show-description .item-title {
+  background: #009500;
+}
+<<<<<<< HEAD
+=======
+.nat .liz-table table * {
+  border-color: #009500;
+}
+.nat .liz-table table th {
+  background: #005300;
+}
+>>>>>>> 1ec9979d5558503f32f0e757421a2c0d0f9777d7
+.nat .big-letters {
+  background: #009500;
+}
+
+.esp .header {
+  background: #d44a27;
+}
+.esp #next:hover, .esp #prev:hover {
+  background-color: #f9dfd9;
+}
+.esp #next h2, .esp #prev h2 {
+  color: #d44a27;
+}
+.esp #icon-back, .esp #icon-next {
+  fill: #d44a27;
+  opacity: 1;
+}
+.esp .shadow {
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset rgba(0, 0, 0, 0.12) 0 0px 0, rgba(0, 0, 0, 0.3) 0 1px 2px, #d44a27 0 1px 10px;
+}
+.esp .lesson-logo img {
+  background-image: url("../resources/common/iconoes.png");
+}
+<<<<<<< HEAD
+=======
+.esp .farewell-modal {
+  background: white url("..");
+}
+>>>>>>> 1ec9979d5558503f32f0e757421a2c0d0f9777d7
+.esp .block {
+  background: #d44a27;
+}
+.esp .block-content {
+  border-color: #d44a27;
+}
+.esp .btn-primary, .esp .btn-primary-farewell {
+  background: #d44a27;
+}
+.esp .btn-primary:hover, .esp .btn-primary:active, .esp .btn-primary-farewell:hover, .esp .btn-primary-farewell:active {
+  background: #7a2b16;
+}
+<<<<<<< HEAD
+=======
+.esp .input-primary {
+  border-color: #d44a27;
+}
+>>>>>>> 1ec9979d5558503f32f0e757421a2c0d0f9777d7
+.esp .course-modal-title {
+  background: #d44a27;
+}
+.esp .course-modal-content {
+  color: #d44a27;
+}
+.esp #farewell-box {
+  background-image: url("../resources/common/boxes.png");
+}
+.esp #farewell-kid {
+  background-image: url("../resources/common/kides.png");
+}
+<<<<<<< HEAD
+.esp .liz-complete-letters .item
+input[type=text],
+.esp .liz-complete-words .item
+input[type=text],
+.esp .liz-complete-words-wi .item
+input[type=text],
+.esp .liz-complete-inputs-free .item
+input[type=text] {
+  border-bottom-color: #d44a27;
+}
+.esp .liz-complete-letters .item
+input[type=text]:focus,
+.esp .liz-complete-words .item
+input[type=text]:focus,
+.esp .liz-complete-words-wi .item
+input[type=text]:focus,
+.esp .liz-complete-inputs-free .item
+input[type=text]:focus {
+  border-bottom-color: #7a2b16;
+  background: #7a2b16;
+}
+.esp .liz-complete-letters .complete-container,
+.esp .liz-complete-words .complete-container,
+.esp .liz-complete-words-wi .complete-container,
+.esp .liz-complete-inputs-free .complete-container {
+  border-color: #d44a27 !important;
+}
+.esp .liz-complete-letters .complete-container .input-container,
+.esp .liz-complete-words .complete-container .input-container,
+.esp .liz-complete-words-wi .complete-container .input-container,
+.esp .liz-complete-inputs-free .complete-container .input-container {
+  border-bottom-color: #d44a27;
+}
+.esp .liz-complete-letters .complete-container input:focus,
+.esp .liz-complete-letters .complete-container textarea[type=text]:focus,
+.esp .liz-complete-words .complete-container input:focus,
+.esp .liz-complete-words .complete-container textarea[type=text]:focus,
+.esp .liz-complete-words-wi .complete-container input:focus,
+.esp .liz-complete-words-wi .complete-container textarea[type=text]:focus,
+.esp .liz-complete-inputs-free .complete-container input:focus,
+.esp .liz-complete-inputs-free .complete-container textarea[type=text]:focus {
+  border-color: #d44a27 !important;
+  color: #d44a27;
+  /* background: $color2; */
+}
+.esp .liz-complete-letters .letters .syllable strong,
+.esp .liz-complete-words .letters .syllable strong,
+.esp .liz-complete-words-wi .letters .syllable strong,
+.esp .liz-complete-inputs-free .letters .syllable strong {
+=======
+.esp .liz-complete-letters .item input[type=text] {
+  border-bottom-color: #d44a27;
+}
+.esp .liz-complete-letters .item input[type=text]:focus {
+  border-bottom-color: #7a2b16;
+  background: #7a2b16;
+}
+.esp .liz-complete-letters .letters .syllable strong {
+>>>>>>> 1ec9979d5558503f32f0e757421a2c0d0f9777d7
+  color: #d44a27;
+}
+.esp .liz-choose-items .letter {
+  color: #d44a27;
+}
+.esp .liz-choose-items .letter:hover {
+  background: #d44a27;
+}
+.esp .liz-pairs * {
+  border-color: #d44a27 !important;
+}
+.esp .liz-pairs strong {
+  color: #d44a27;
+}
+.esp .liz-complete-inputs .item,
+.esp .liz-complete-inputs input,
+.esp .liz-complete-inputs-description .item,
+.esp .liz-complete-inputs-description input {
+  border-color: #d44a27 !important;
+  color: #d44a27 !important;
+}
+.esp .liz-complete-inputs strong,
+.esp .liz-complete-inputs strong2,
+.esp .liz-complete-inputs-description strong,
+.esp .liz-complete-inputs-description strong2 {
+  color: #d44a27 !important;
+}
+.esp .liz-complete-inputs .block-content,
+.esp .liz-complete-inputs-description .block-content {
+  border-color: #d44a27 !important;
+}
+.esp .liz-complete-inputs .input-group,
+.esp .liz-complete-inputs-description .input-group {
+  border-color: #d44a27 !important;
+}
+.esp .liz-complete-inputs .input-group .input-group-addon,
+.esp .liz-complete-inputs-description .input-group .input-group-addon {
+  background: #d44a27 !important;
+}
+.esp .liz-complete-inputs .input-group input[type=text],
+.esp .liz-complete-inputs-description .input-group input[type=text] {
+  color: #d44a27 !important;
+}
+.esp .liz-one-group .target {
+  border-color: #d44a27 !important;
+}
+.esp .liz-drag-drop-mark .target {
+  border-color: #d44a27 !important;
+}
+.esp .liz-multiple-mark .target {
+  border-color: #d44a27 !important;
+}
+.esp .liz-puzzle1 .puzzle1-canvas {
+  border-color: #d44a27;
+}
+.esp .liz-puzzle2 .puzzle2-canvas, .esp .liz-puzzle2 .item {
+  border-color: #d44a27 !important;
+}
+.esp .liz-puzzle2 .item {
+  background: #f9dfd9;
+}
+.esp .liz-puzzle4 .item:hover {
+  color: #d44a27;
+}
+.esp .liz-puzzle4 .target {
+  box-shadow: 0px 0px 0px 3px #d44a27;
+}
+.esp .liz-puzzle4 .target-item {
+  background-color: #f9dfd9;
+}
+.esp .liz-multiple-selection .item {
+  border-color: #d44a27;
+}
+.esp .liz-sound-group .group {
+  border-color: #d44a27;
+}
+.esp .liz-drop-out .group {
+  border-color: #d44a27;
+}
+.esp .liz-compare-sample .group {
+  border-color: #d44a27;
+}
+.esp .liz-compare-sample .sample {
+  background: #f9dfd9;
+}
+.esp .liz-count-elements .number {
+  background: #d44a27;
+}
+.esp .liz-count-elements .sortable {
+  border-color: #d44a27;
+}
+.esp .liz-count-elements2 .item input[type=text] {
+  border-color: #d44a27 !important;
+}
+.esp .liz-sequences .sequence, .esp .liz-sequences .sequence-item {
+  border-color: #d44a27;
+}
+.esp .liz-group-inputs input[type="text"] {
+  border-color: #d44a27;
+}
+<<<<<<< HEAD
+=======
+.esp .liz-pairs-inputs * {
+  border-color: #d44a27;
+}
+.esp .liz-pairs-inputs *:focus {
+  background: #d44a27;
+}
+>>>>>>> 1ec9979d5558503f32f0e757421a2c0d0f9777d7
+.esp .click-images .item p strong {
+  color: #d44a27;
+}
+.esp .liz-show-parts .item-title {
+  background: #d44a27;
+}
+.esp .liz-show-concepts .inner-item {
+  background: #d44a27;
+}
+.esp .liz-show-description .item-title {
+  background: #d44a27;
+}
+<<<<<<< HEAD
+=======
+.esp .liz-table table * {
+  border-color: #d44a27;
+}
+.esp .liz-table table th {
+  background: #7a2b16;
+}
+>>>>>>> 1ec9979d5558503f32f0e757421a2c0d0f9777d7
+.esp .big-letters {
+  background: #d44a27;
+}
+
+.soc .header {
+  background: #0c64e9;
+}
+.soc #next:hover, .soc #prev:hover {
+  background-color: rgba(105, 158, 238, 0.5);
+}
+.soc #next h2, .soc #prev h2 {
+  color: #0c64e9;
+}
+.soc #icon-back, .soc #icon-next {
+  fill: #0c64e9;
+  opacity: 1;
+}
+.soc .shadow {
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset rgba(0, 0, 0, 0.12) 0 0px 0, rgba(0, 0, 0, 0.3) 0 1px 2px, #0c64e9 0 1px 10px;
+}
+.soc .lesson-logo img {
+  background-image: url("../resources/common/iconosoc.png");
+}
+<<<<<<< HEAD
+=======
+.soc .farewell-modal {
+  background: white url("..");
+}
+>>>>>>> 1ec9979d5558503f32f0e757421a2c0d0f9777d7
+.soc .block {
+  background: #0c64e9;
+}
+.soc .block-content {
+  border-color: #0c64e9;
+}
+.soc .btn-primary, .soc .btn-primary-farewell {
+  background: #0c64e9;
+}
+.soc .btn-primary:hover, .soc .btn-primary:active, .soc .btn-primary-farewell:hover, .soc .btn-primary-farewell:active {
+  background: #063782;
+}
+<<<<<<< HEAD
+=======
+.soc .input-primary {
+  border-color: #0c64e9;
+}
+>>>>>>> 1ec9979d5558503f32f0e757421a2c0d0f9777d7
+.soc .course-modal-title {
+  background: #0c64e9;
+}
+.soc .course-modal-content {
+  color: #0c64e9;
+}
+.soc #farewell-box {
+  background-image: url("../resources/common/boxsoc.png");
+}
+.soc #farewell-kid {
+  background-image: url("../resources/common/kidsoc.png");
+}
+<<<<<<< HEAD
+.soc .liz-complete-letters .item
+input[type=text],
+.soc .liz-complete-words .item
+input[type=text],
+.soc .liz-complete-words-wi .item
+input[type=text],
+.soc .liz-complete-inputs-free .item
+input[type=text] {
+  border-bottom-color: #0c64e9;
+}
+.soc .liz-complete-letters .item
+input[type=text]:focus,
+.soc .liz-complete-words .item
+input[type=text]:focus,
+.soc .liz-complete-words-wi .item
+input[type=text]:focus,
+.soc .liz-complete-inputs-free .item
+input[type=text]:focus {
+  border-bottom-color: #063782;
+  background: #063782;
+}
+.soc .liz-complete-letters .complete-container,
+.soc .liz-complete-words .complete-container,
+.soc .liz-complete-words-wi .complete-container,
+.soc .liz-complete-inputs-free .complete-container {
+  border-color: #0c64e9 !important;
+}
+.soc .liz-complete-letters .complete-container .input-container,
+.soc .liz-complete-words .complete-container .input-container,
+.soc .liz-complete-words-wi .complete-container .input-container,
+.soc .liz-complete-inputs-free .complete-container .input-container {
+  border-bottom-color: #0c64e9;
+}
+.soc .liz-complete-letters .complete-container input:focus,
+.soc .liz-complete-letters .complete-container textarea[type=text]:focus,
+.soc .liz-complete-words .complete-container input:focus,
+.soc .liz-complete-words .complete-container textarea[type=text]:focus,
+.soc .liz-complete-words-wi .complete-container input:focus,
+.soc .liz-complete-words-wi .complete-container textarea[type=text]:focus,
+.soc .liz-complete-inputs-free .complete-container input:focus,
+.soc .liz-complete-inputs-free .complete-container textarea[type=text]:focus {
+  border-color: #0c64e9 !important;
+  color: #0c64e9;
+  /* background: $color2; */
+}
+.soc .liz-complete-letters .letters .syllable strong,
+.soc .liz-complete-words .letters .syllable strong,
+.soc .liz-complete-words-wi .letters .syllable strong,
+.soc .liz-complete-inputs-free .letters .syllable strong {
+=======
+.soc .liz-complete-letters .item input[type=text] {
+  border-bottom-color: #0c64e9;
+}
+.soc .liz-complete-letters .item input[type=text]:focus {
+  border-bottom-color: #063782;
+  background: #063782;
+}
+.soc .liz-complete-letters .letters .syllable strong {
+>>>>>>> 1ec9979d5558503f32f0e757421a2c0d0f9777d7
+  color: #0c64e9;
+}
+.soc .liz-choose-items .letter {
+  color: #0c64e9;
+}
+.soc .liz-choose-items .letter:hover {
+  background: #0c64e9;
+}
+.soc .liz-pairs * {
+  border-color: #0c64e9 !important;
+}
+.soc .liz-pairs strong {
+  color: #0c64e9;
+}
+.soc .liz-complete-inputs .item,
+.soc .liz-complete-inputs input,
+.soc .liz-complete-inputs-description .item,
+.soc .liz-complete-inputs-description input {
+  border-color: #0c64e9 !important;
+  color: #0c64e9 !important;
+}
+.soc .liz-complete-inputs strong,
+.soc .liz-complete-inputs strong2,
+.soc .liz-complete-inputs-description strong,
+.soc .liz-complete-inputs-description strong2 {
+  color: #0c64e9 !important;
+}
+.soc .liz-complete-inputs .block-content,
+.soc .liz-complete-inputs-description .block-content {
+  border-color: #0c64e9 !important;
+}
+.soc .liz-complete-inputs .input-group,
+.soc .liz-complete-inputs-description .input-group {
+  border-color: #0c64e9 !important;
+}
+.soc .liz-complete-inputs .input-group .input-group-addon,
+.soc .liz-complete-inputs-description .input-group .input-group-addon {
+  background: #0c64e9 !important;
+}
+.soc .liz-complete-inputs .input-group input[type=text],
+.soc .liz-complete-inputs-description .input-group input[type=text] {
+  color: #0c64e9 !important;
+}
+.soc .liz-one-group .target {
+  border-color: #0c64e9 !important;
+}
+.soc .liz-drag-drop-mark .target {
+  border-color: #0c64e9 !important;
+}
+.soc .liz-multiple-mark .target {
+  border-color: #0c64e9 !important;
+}
+.soc .liz-puzzle1 .puzzle1-canvas {
+  border-color: #0c64e9;
+}
+.soc .liz-puzzle2 .puzzle2-canvas, .soc .liz-puzzle2 .item {
+  border-color: #0c64e9 !important;
+}
+.soc .liz-puzzle2 .item {
+  background: rgba(105, 158, 238, 0.5);
+}
+.soc .liz-puzzle4 .item:hover {
+  color: #0c64e9;
+}
+.soc .liz-puzzle4 .target {
+  box-shadow: 0px 0px 0px 3px #0c64e9;
+}
+.soc .liz-puzzle4 .target-item {
+  background-color: rgba(105, 158, 238, 0.5);
+}
+.soc .liz-multiple-selection .item {
+  border-color: #0c64e9;
+}
+.soc .liz-sound-group .group {
+  border-color: #0c64e9;
+}
+.soc .liz-drop-out .group {
+  border-color: #0c64e9;
+}
+.soc .liz-compare-sample .group {
+  border-color: #0c64e9;
+}
+.soc .liz-compare-sample .sample {
+  background: rgba(105, 158, 238, 0.5);
+}
+.soc .liz-count-elements .number {
+  background: #0c64e9;
+}
+.soc .liz-count-elements .sortable {
+  border-color: #0c64e9;
+}
+.soc .liz-count-elements2 .item input[type=text] {
+  border-color: #0c64e9 !important;
+}
+.soc .liz-sequences .sequence, .soc .liz-sequences .sequence-item {
+  border-color: #0c64e9;
+}
+.soc .liz-group-inputs input[type="text"] {
+  border-color: #0c64e9;
+}
+<<<<<<< HEAD
+=======
+.soc .liz-pairs-inputs * {
+  border-color: #0c64e9;
+}
+.soc .liz-pairs-inputs *:focus {
+  background: #0c64e9;
+}
+>>>>>>> 1ec9979d5558503f32f0e757421a2c0d0f9777d7
+.soc .click-images .item p strong {
+  color: #0c64e9;
+}
+.soc .liz-show-parts .item-title {
+  background: #0c64e9;
+}
+.soc .liz-show-concepts .inner-item {
+  background: #0c64e9;
+}
+.soc .liz-show-description .item-title {
+  background: #0c64e9;
+}
+<<<<<<< HEAD
+=======
+.soc .liz-table table * {
+  border-color: #0c64e9;
+}
+.soc .liz-table table th {
+  background: #063782;
+}
+>>>>>>> 1ec9979d5558503f32f0e757421a2c0d0f9777d7
+.soc .big-letters {
+  background: #0c64e9;
+}
+
+.mat .header {
+  background: #bd0926;
+}
+.mat #next:hover, .mat #prev:hover {
+  background-color: rgba(241, 153, 166, 0.4);
+}
+.mat #next h2, .mat #prev h2 {
+  color: #bd0926;
+}
+.mat #icon-back, .mat #icon-next {
+  fill: #bd0926;
+  opacity: 1;
+}
+.mat .shadow {
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset rgba(0, 0, 0, 0.12) 0 0px 0, rgba(0, 0, 0, 0.3) 0 1px 2px, #bd0926 0 1px 10px;
+}
+.mat .lesson-logo img {
+  background-image: url("../resources/common/iconomat.png");
+}
+<<<<<<< HEAD
+=======
+.mat .farewell-modal {
+  background: white url("../resources/common/bg_mat.png");
+}
+>>>>>>> 1ec9979d5558503f32f0e757421a2c0d0f9777d7
+.mat .block {
+  background: #bd0926;
+}
+.mat .block-content {
+  border-color: #bd0926;
+}
+.mat .btn-primary, .mat .btn-primary-farewell {
+  background: #bd0926;
+}
+.mat .btn-primary:hover, .mat .btn-primary:active, .mat .btn-primary-farewell:hover, .mat .btn-primary-farewell:active {
+  background: #620412;
+}
+<<<<<<< HEAD
+=======
+.mat .input-primary {
+  border-color: #bd0926;
+}
+>>>>>>> 1ec9979d5558503f32f0e757421a2c0d0f9777d7
+.mat .course-modal-title {
+  background: #bd0926;
+}
+.mat .course-modal-content {
+  color: #bd0926;
+}
+.mat #farewell-box {
+  background-image: url("../resources/common/boxmat.png");
+}
+.mat #farewell-kid {
+  background-image: url("../resources/common/kidmat.png");
+}
+<<<<<<< HEAD
+.mat .liz-complete-letters .item
+input[type=text],
+.mat .liz-complete-words .item
+input[type=text],
+.mat .liz-complete-words-wi .item
+input[type=text],
+.mat .liz-complete-inputs-free .item
+input[type=text] {
+  border-bottom-color: #bd0926;
+}
+.mat .liz-complete-letters .item
+input[type=text]:focus,
+.mat .liz-complete-words .item
+input[type=text]:focus,
+.mat .liz-complete-words-wi .item
+input[type=text]:focus,
+.mat .liz-complete-inputs-free .item
+input[type=text]:focus {
+  border-bottom-color: #620412;
+  background: #620412;
+}
+.mat .liz-complete-letters .complete-container,
+.mat .liz-complete-words .complete-container,
+.mat .liz-complete-words-wi .complete-container,
+.mat .liz-complete-inputs-free .complete-container {
+  border-color: #bd0926 !important;
+}
+.mat .liz-complete-letters .complete-container .input-container,
+.mat .liz-complete-words .complete-container .input-container,
+.mat .liz-complete-words-wi .complete-container .input-container,
+.mat .liz-complete-inputs-free .complete-container .input-container {
+  border-bottom-color: #bd0926;
+}
+.mat .liz-complete-letters .complete-container input:focus,
+.mat .liz-complete-letters .complete-container textarea[type=text]:focus,
+.mat .liz-complete-words .complete-container input:focus,
+.mat .liz-complete-words .complete-container textarea[type=text]:focus,
+.mat .liz-complete-words-wi .complete-container input:focus,
+.mat .liz-complete-words-wi .complete-container textarea[type=text]:focus,
+.mat .liz-complete-inputs-free .complete-container input:focus,
+.mat .liz-complete-inputs-free .complete-container textarea[type=text]:focus {
+  border-color: #bd0926 !important;
+  color: #bd0926;
+  /* background: $color2; */
+}
+.mat .liz-complete-letters .letters .syllable strong,
+.mat .liz-complete-words .letters .syllable strong,
+.mat .liz-complete-words-wi .letters .syllable strong,
+.mat .liz-complete-inputs-free .letters .syllable strong {
+=======
+.mat .liz-complete-letters .item input[type=text] {
+  border-bottom-color: #bd0926;
+}
+.mat .liz-complete-letters .item input[type=text]:focus {
+  border-bottom-color: #620412;
+  background: #620412;
+}
+.mat .liz-complete-letters .letters .syllable strong {
+>>>>>>> 1ec9979d5558503f32f0e757421a2c0d0f9777d7
+  color: #bd0926;
+}
+.mat .liz-choose-items .letter {
+  color: #bd0926;
+}
+.mat .liz-choose-items .letter:hover {
+  background: #bd0926;
+}
+.mat .liz-pairs * {
+  border-color: #bd0926 !important;
+}
+.mat .liz-pairs strong {
+  color: #bd0926;
+}
+.mat .liz-complete-inputs .item,
+.mat .liz-complete-inputs input,
+.mat .liz-complete-inputs-description .item,
+.mat .liz-complete-inputs-description input {
+  border-color: #bd0926 !important;
+  color: #bd0926 !important;
+}
+.mat .liz-complete-inputs strong,
+.mat .liz-complete-inputs strong2,
+.mat .liz-complete-inputs-description strong,
+.mat .liz-complete-inputs-description strong2 {
+  color: #bd0926 !important;
+}
+.mat .liz-complete-inputs .block-content,
+.mat .liz-complete-inputs-description .block-content {
+  border-color: #bd0926 !important;
+}
+.mat .liz-complete-inputs .input-group,
+.mat .liz-complete-inputs-description .input-group {
+  border-color: #bd0926 !important;
+}
+.mat .liz-complete-inputs .input-group .input-group-addon,
+.mat .liz-complete-inputs-description .input-group .input-group-addon {
+  background: #bd0926 !important;
+}
+.mat .liz-complete-inputs .input-group input[type=text],
+.mat .liz-complete-inputs-description .input-group input[type=text] {
+  color: #bd0926 !important;
+}
+.mat .liz-one-group .target {
+  border-color: #bd0926 !important;
+}
+.mat .liz-drag-drop-mark .target {
+  border-color: #bd0926 !important;
+}
+.mat .liz-multiple-mark .target {
+  border-color: #bd0926 !important;
+}
+.mat .liz-puzzle1 .puzzle1-canvas {
+  border-color: #bd0926;
+}
+.mat .liz-puzzle2 .puzzle2-canvas, .mat .liz-puzzle2 .item {
+  border-color: #bd0926 !important;
+}
+.mat .liz-puzzle2 .item {
+  background: rgba(241, 153, 166, 0.4);
+}
+.mat .liz-puzzle4 .item:hover {
+  color: #bd0926;
+}
+.mat .liz-puzzle4 .target {
+  box-shadow: 0px 0px 0px 3px #bd0926;
+}
+.mat .liz-puzzle4 .target-item {
+  background-color: rgba(241, 153, 166, 0.4);
+}
+.mat .liz-multiple-selection .item {
+  border-color: #bd0926;
+}
+.mat .liz-sound-group .group {
+  border-color: #bd0926;
+}
+.mat .liz-drop-out .group {
+  border-color: #bd0926;
+}
+.mat .liz-compare-sample .group {
+  border-color: #bd0926;
+}
+.mat .liz-compare-sample .sample {
+  background: rgba(241, 153, 166, 0.4);
+}
+.mat .liz-count-elements .number {
+  background: #bd0926;
+}
+.mat .liz-count-elements .sortable {
+  border-color: #bd0926;
+}
+.mat .liz-count-elements2 .item input[type=text] {
+  border-color: #bd0926 !important;
+}
+.mat .liz-sequences .sequence, .mat .liz-sequences .sequence-item {
+  border-color: #bd0926;
+}
+.mat .liz-group-inputs input[type="text"] {
+  border-color: #bd0926;
+}
+<<<<<<< HEAD
+=======
+.mat .liz-pairs-inputs * {
+  border-color: #bd0926;
+}
+.mat .liz-pairs-inputs *:focus {
+  background: #bd0926;
+}
+>>>>>>> 1ec9979d5558503f32f0e757421a2c0d0f9777d7
+.mat .click-images .item p strong {
+  color: #bd0926;
+}
+.mat .liz-show-parts .item-title {
+  background: #bd0926;
+}
+.mat .liz-show-concepts .inner-item {
+  background: #bd0926;
+}
+.mat .liz-show-description .item-title {
+  background: #bd0926;
+}
+<<<<<<< HEAD
+=======
+.mat .liz-table table * {
+  border-color: #bd0926;
+}
+.mat .liz-table table th {
+  background: #620412;
+}
+>>>>>>> 1ec9979d5558503f32f0e757421a2c0d0f9777d7
+.mat .big-letters {
+  background: #bd0926;
+}

@@ -1,0 +1,18 @@
+.animation-base{
+
+	& > .block-content{
+		padding: 10px;
+	}
+
+	.button-container{
+		width: 100%;
+		text-align: center;
+
+		.btn-primary{
+			margin-top: 0;
+			font-size: 1.4em;
+		}
+
+	}
+
+}

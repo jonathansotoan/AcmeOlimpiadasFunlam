@@ -1,0 +1,48 @@
+#liz-animation-1 {
+  position: relative; }
+  #liz-animation-1 .set {
+    margin-left: 35%;
+    width: 30%;
+    position: relative; }
+    #liz-animation-1 .set img {
+      max-height: 250px;
+      margin: auto;
+      background: #fff;
+      z-index: 2; }
+  #liz-animation-1 .moving-item {
+    max-height: 141px;
+    position: absolute;
+    top: 24%;
+    left: 45%;
+    -webkit-transform: rotate(34deg);
+    -moz-transform: rotate(34deg);
+    -ms-transform: rotate(34deg);
+    -o-transform: rotate(34deg);
+    transform: rotate(34deg); }
+  #liz-animation-1 .message {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 50%;
+    opacity: 0; }
+  #liz-animation-1.step-1 .set {
+    margin-left: 20%;
+    -webkit-transition: all 0.6s ease-in;
+    -moz-transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in; }
+  #liz-animation-1.step-1 .layer-top {
+    opacity: 0; }
+  #liz-animation-1.step-1 .moving-item {
+    left: 60%;
+    -webkit-transition: all 0.6s ease-in;
+    -moz-transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in; }
+  #liz-animation-1.step-2 .set {
+    margin-left: 0%; }
+  #liz-animation-1.step-2 .moving-item {
+    left: 35%; }
+  #liz-animation-1.step-2 .message {
+    opacity: 1;
+    -webkit-transition: all 0.6s ease-in 0.4s;
+    -moz-transition: all 0.6s ease-in 0.4s;
+    transition: all 0.6s ease-in 0.4s; }

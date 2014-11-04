@@ -1,0 +1,41 @@
+@import "../bourbon/bourbon.scss";
+
+// Mixin que alínea a todos los hijos
+@mixin align-children{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+// Hijo con el height del padre. Importante: el padre debe tener overflow: hidden
+// Nota: No es compatible con un padre con display: flex
+@mixin full-height-child{
+	padding-bottom: 2000px;
+	margin-bottom: -2000px;
+}
+
+// clearfix en el elemento
+@mixin clearfix {
+	*zoom: 1;
+	&:before,
+	&:after {
+		display: table;
+		content: "";
+		// Fixes Opera/contenteditable bug:
+		// http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+		line-height: 0;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+// deshabilita la selección
+@mixin no-select {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}

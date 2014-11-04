@@ -1,0 +1,62 @@
+@import "../bourbon/bourbon";
+
+#liz-animation-1 {
+	position: relative;
+
+	// Estilos base
+	.set{
+		margin-left: 35%;
+		width: 30%;
+		position: relative;
+
+		img{
+			max-height: 250px;
+			margin: auto;
+			background: #fff;
+			z-index: 2;
+		}
+
+	}
+
+	.moving-item{
+		max-height: 141px;
+		position: absolute;
+		top: 24%;
+		left: 45%;
+		@include transform(rotate(34deg));
+	}
+
+	.message{
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		width: 50%;
+		opacity: 0;
+	}
+
+	// *********************************************
+	// Paso 1
+	// *********************************************
+	&.step-1{
+		.set{ 
+			margin-left: 20%; 
+			@include transition(all 0.6s ease-in);
+		}
+		.layer-top{ opacity: 0; }
+		.moving-item{
+			left: 60%; 
+			@include transition(all 0.6s ease-in);
+		}
+	}	
+
+	&.step-2{
+		.set{ margin-left: 0%; }
+		.moving-item{ left: 35%; }
+		.message{ 
+			opacity: 1; 
+			@include transition(all 0.6s ease-in 0.4s);
+		}
+	}	
+
+}
+

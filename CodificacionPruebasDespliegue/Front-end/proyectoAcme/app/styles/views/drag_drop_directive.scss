@@ -1,0 +1,76 @@
+@import "../common/_mixins.scss";
+@import "../common/themes.scss";
+
+.drag-drop-directive{
+	 padding-bottom: 20px;
+
+	.text-box{
+		width: 100%;
+		float: left;
+		padding: 0.6em;
+		
+		.items-container{
+			
+			width: 100%;
+			float: right;
+
+			.words-items{
+				width:190px;
+				float: left;
+				border-radius: 0px;
+				height: 50px;
+				font-size: 20px;
+				color: white;text-align: center;
+				padding-top: 12px;
+				margin-left: 10px;
+				margin-bottom: 10px;
+				cursor: move;
+			}
+
+		}
+		
+	}
+
+	.complete-container{
+		border: 3px solid #000;
+		font-size: 20px;
+		font-family: 'century_gothic';
+		width: 97%;
+		float: left;
+		min-height: 200px;
+		margin-left: 2%;
+		padding: 10px;
+
+		.words-items{
+			width:185px;
+			float: left;
+			border-radius: 0px;
+			height: 50px;
+			font-size: 20px;
+			color: white;text-align: center;
+			padding-top: 12px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			cursor: move;
+		}
+	}
+
+	.mysortable	{
+		width: 100%;
+		padding: 0;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	
+	.right-answer, .wrong-answer{
+		position: relative;
+		top: -30px;
+		left: 80%;
+		$size: 25px;
+	    width: $size;
+	    height: $size;
+	    background-size: $size $size;
+	}
+
+	
+}

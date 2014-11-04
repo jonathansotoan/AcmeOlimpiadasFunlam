@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es" ng-app="index">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Proyecto Acme</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" href="css/app.css">
+    <style>
+
+   
+        
+    </style>
+</head>
+<body class="theme1">
+	<!--[if lt IE 8]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+	<!-- Clase que controla los themas(.theme1,.theme2,.theme3,.theme4) -->
+	<div id="container" class="theme1" ng-include src="'views/common/include.php'"></div>
+
+<script type="text/ng-template" id="home">
+    <home 
+        options="data"
+        title="titulo options"
+    </home>
+</script>
+
+    <script type="text/ng-template" id="page2">
+    <transclusion 
+      audio="C2"
+      title="El punto"
+      <!--INICIO-->
+      <div class="block bg-3 panel-M">
+        <div class="panel-group col-md-3 col-xs-12" id="accordion">
+          <div ng-repeat="item in collapse" class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="cursor-pointer"collapse collapse-parent="#accordion"  collapse-target="#{{$index}}">
+                  {{item.title}} {{$index}}
+                </a>
+              </h4>
+            </div>
+            <div id="{{$index}}" class="panel-collapse collapse">
+              <div class="panel-body">
+                {{item.text}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--FIN-->
+    </transclusion>
+  </script>
+
+    
+	<script src="scripts/vendor.js"></script>
+	<script src="scripts/app.js"></script>
+
+	<script>
+		// Requerido para activar el autoreload
+		window.brunch = window.brunch || {};
+	</script>
+
+</body>
+</html>
+

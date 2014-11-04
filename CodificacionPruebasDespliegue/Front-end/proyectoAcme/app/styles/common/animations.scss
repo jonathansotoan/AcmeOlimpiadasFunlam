@@ -1,0 +1,161 @@
+@import "../bourbon/bourbon.scss";
+
+@include keyframes(fadeOut){
+	0% { opacity: 1; }
+	100% { opacity: 0; display:none; }
+}
+
+@include keyframes(fadeIn){
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@include keyframes(kidout){
+	0% {
+		@include transform(translate(0px, 120px));
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@include keyframes(easy_in){
+	0% {
+		opacity: 0;
+	}
+	50% {
+		@include transform(translate(0px, calc(0% + 120px)));
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@include keyframes(kidout2){
+	0% {
+		top:40%;
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@include keyframes(fade_in1){
+	0% {
+		opacity: 0;
+	}
+
+
+	50% {
+		opacity: 1;
+	}
+}
+
+@include keyframes(fade_up1){
+	0% {
+		top:110%;
+
+	}
+
+	50% {
+		top:10%;
+	}
+
+	100% {
+		top:110%;
+	}
+}
+
+@include keyframes(fade_up2){
+	0% {
+		top:110%;
+
+	}
+
+	50% {
+		top:1%;
+	}
+
+	100% {
+		top:110%;
+	}
+}
+
+@include keyframes(fade_up3){
+	0% {
+		
+		top:110%;
+
+	}
+
+	50% {
+		top:-5%;
+		
+	}
+
+	100% {
+		top:110%;
+		
+	}
+}
+
+@include keyframes (scale1) {
+	0% {
+		@include transform(scale(0));
+	}
+	50% {
+		@include transform(scale(1.3));
+	}
+	70% {
+		@include transform(scale(1));
+	}
+	90% {
+		@include transform(scale(1.1));
+	}
+}
+
+@include keyframes (scale2) {
+	0% {
+		@include transform(scale(0));
+	}
+	100% {
+		@include transform(scale(1));
+	}
+}
+
+@include keyframes (click1) {
+	0% {
+		@include transform(scale(0.9));
+	}
+	100% {
+		@include transform(scale(1));
+	}
+}
+
+@include keyframes (goTop) {
+	100% {
+		margin-top: 0;
+	}
+}
+
+@include keyframes(width_up){
+	0% {
+		width:0%;
+		
+	}
+
+	100% {
+		width:100%;
+		
+	}
+}
+
+@include keyframes(width_up2){
+	0% {
+		width:0%;
+		
+	}
+}

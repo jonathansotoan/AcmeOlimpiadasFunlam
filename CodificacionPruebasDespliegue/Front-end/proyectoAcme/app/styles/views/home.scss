@@ -1,0 +1,150 @@
+@import "../bourbon/bourbon";
+
+// *****************************************************************************
+// variables
+// *****************************************************************************
+$screen-xs-min: 480px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+
+.home{
+
+
+	// Estilos por defecto
+	.slides {
+		display: none;
+	}
+
+	.block-content{
+		padding: 0px!important;
+		position: relative;
+	}
+
+	.slideshow {
+		width: 100vw!important;
+		float: right;
+		position: relative;
+		max-width: 1500px;
+	}
+
+	// Slidesjs
+	.slidesjs-container, 
+	.slidesjs-control {
+		width: 100vw!important;
+		height: 40vw!important;
+		max-width: 1500px;
+		max-height: 600px;
+
+
+	}
+
+	.slidesjs-navigation{
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		position: absolute;
+		top: 45%;
+		z-index: 1000000;
+		@include transition(all 0.4s ease-out);
+
+		@media(max-width: $screen-md-min){ 
+			top: 115%;
+			}
+
+		&.slidesjs-previous{
+			background-image: url(../resources/common/navslidenew2.png);			
+			left: 5%;
+			color: transparent;
+			overflow: hidden;
+
+			@media(max-width: $screen-md-min){ 
+			left: 5%;
+			}
+		}
+
+		&.slidesjs-next{
+			background-image: url(../resources/common/navslidenew.png);
+			right: 4%;
+			color: transparent;
+
+			@media(max-width: $screen-md-min){ 
+			right: 3%;
+			}
+		}
+	}
+	
+
+	.inner-title{
+		$size: 15em;
+		width: $size;
+		height: $size/5;
+		line-height: $size/5;
+		text-align: center;
+		border-radius: 10px;
+		cursor: pointer;
+		margin-left: 20px;
+		margin-top: 9px;
+		color: #fff;
+		border: 0px solid;
+		@include transition(all 0.4s ease-out);
+
+		// Cuando está activo
+		&.is-selected{ box-shadow: 0px 0px 0px 5px #272727; }
+	}
+
+	.inner-item{
+		$size: 4.0em;
+		width: $size;
+		height: $size;
+		line-height: $size;
+		text-align: center;
+		border-radius: 50%;
+		color: #fff;
+		cursor: pointer;
+		margin: auto;
+		background-color: #fff;
+		border: 3px solid;
+		float: left;
+		@include transition(all 0.4s ease-out);
+
+		// Cuando está activo
+		&.is-selected{ box-shadow: 0px 0px 0px 5px #272727; }
+
+		.inner-item-inner{
+		$size: 3.6em;
+		width: $size;
+		height: $size;
+		line-height: $size;
+		text-align: center;
+		border-radius: 50%;
+		color: #fff;
+		cursor: pointer;
+		margin: auto;
+		background-color: #fff;
+		border: 3px solid;
+		@include transition(all 0.4s ease-out);
+
+		}
+	}
+
+	.text-box{
+		width: 40%;
+		float: left;
+
+		.block-content{
+			padding-top:  0!important;
+			min-height: 180px;
+
+			img{
+				display: block;
+				margin: auto;
+			}
+		}
+
+		.main-img{ width: 90%; }
+	}
+
+	
+
+}
+

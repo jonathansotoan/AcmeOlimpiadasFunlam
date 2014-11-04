@@ -1,0 +1,192 @@
+@import "../bourbon/bourbon.scss";
+@mixin create-theme (
+	$color1, 
+	$color2: #001, 
+	$color3: #fff,
+	$color4: #fff 
+	){
+
+	// *****************************************************************************
+	// Principales
+	// *****************************************************************************
+	.header{ background: $color1; }
+
+	
+	.shadow{
+		box-shadow: inset 0px 1px 0px rgba(255,255,255,0.3),inset rgba(0,0,0,0.12) 0 -0px 0,rgba(0,0,0,0.3) 0 1px 2px,$color1 0 1px 10px;
+	}
+
+	
+
+	// *****************************************************************************
+	// Otros elementos
+	// *****************************************************************************
+	.block{ background: $color1; }
+	.block-content{ border-color: $color1; }
+	
+	.btn-primary, .btn-primary-farewell{
+		background: $color1;
+		&:hover, &:active, &.active { background: $color2; }
+	}
+
+	.input-primary{ border-color: $color1; }
+	
+	h3,h2,h1{
+		strong{
+
+			color: $color1;
+		}
+	}
+	
+	strong{
+
+		color: $color1;
+	}
+
+	// *****************************************************************************
+	// Clases útiles
+	// *****************************************************************************
+	.bd-1 { border-color: $color1 !important; }
+	.bd-2 { border-color: $color2 !important; }
+	.bd-3 { border-color: $color3 !important; }
+	.bd-disabled { border-color: #B3B3B3 !important; }
+	.bc-bottom-1{ border-bottom-color: $color1 !important;}
+	.bg-1 { background-color: $color1 !important; }
+	.bg-2 { background-color: $color2 !important; }
+	.bg-3 { background-color: $color3 !important; }
+	.bg-4 { background-color: $color4 !important; }
+	.bs-3 { box-shadow: $color3 !important; }
+	.fc-1 { color: $color1 !important; }
+	.fc-3 { color: $color3 !important; }
+
+	.border-color-R{border-color: transparent transparent transparent $color1;}
+	.border-color-L{border-color: transparent $color1 transparent transparent;}
+	.border-color-B{border-color: $color1 transparent transparent transparent;}
+	.border-color-T{border-color: transparent transparent $color1 transparent;}
+
+	.hover-bg-1{
+
+		&:hover{
+			background-color: $color1 !important;
+		}
+	}
+
+	.item-selectable{
+		&.is-selected{ box-shadow: 0px 0px 0px 5px $color2!important;background-color: $color3 !important;}
+	}
+
+	.center-v-h{
+		display: flex;//centrar verticalmente
+		align-items: center;//centrar verticalmente
+		justify-content: center;//centrar verticalmente
+	}
+
+	.item-is-selected{
+		box-shadow: 0px 0px 0px 5px $color2!important;
+		@include transition(all 0.3s ease-in);
+
+	}
+
+	.popover {
+			background: $color1;
+			color: white;			
+
+			&.top{
+				:after{
+					border-top-color: $color1;
+				}
+			}
+
+			&.left{
+				:after{
+					border-left-color: $color1;
+				}
+			}
+
+			&.right{
+				:after{
+					border-right-color: $color1;
+				}
+			}
+
+			&.bottom{
+				:after{
+					border-bottom-color: $color1;
+				}
+			}
+	}
+
+
+	// *****************************************************************************
+	// Tabla
+	// *****************************************************************************
+	table.table-primary {
+
+		th {
+			@extend .bg-1;
+		}
+
+		th, td {
+			@extend .bd-1;
+		}
+
+	}
+
+	// *****************************************************************************
+	// Modal 
+	// *****************************************************************************
+	.course-modal-title{ background: $color1; }
+	.course-modal-content{ color: $color1; }
+	
+	// *****************************************************************************
+	// Vistas
+	// *****************************************************************************
+	
+	.slidesjs-navigation{
+		background-color: $color1;
+		&:hover{
+		background-color: $color2;	
+		}
+	}
+	
+		
+}
+
+// -------------------------------------------------------------------------
+// clases 
+// -------------------------------------------------------------------------
+.theme1{	
+	@include create-theme(
+		#e74c3c,
+		#c0392b, 
+		#e67e22,
+		#d35400
+	); 
+}
+
+.theme2{	
+	@include create-theme(
+		#00aff0,
+		#07689a,
+		#c267a2,
+		#f1c40f
+	); 
+}
+
+.theme3{	
+	@include create-theme(
+		#e67e22,
+		#d35400, 
+		#f1c40f,
+		#f39c12
+	); 
+}
+
+.theme4{	
+	@include create-theme(
+		#BD0926,
+		#620412, 
+		rgba(241, 153, 166, 0.5),
+		rgba(241, 153, 166, 0.2)
+	); 
+}
