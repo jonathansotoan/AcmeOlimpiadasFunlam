@@ -1,4 +1,8 @@
-<?php if( !isset( $_SESSION['numero_documento'] ) || empty( $_SESSION['numero_documento'] ) ): ?>
+<?php
+include_once('../model/Persistence/Connection.php');
+session_start();
+
+if( !isset( $_SESSION['numero_documento'] ) || empty( $_SESSION['numero_documento'] ) ): ?>
 	<form class="navbar-form navbar-right" method="POST" action="../../Back-end/Login.php">
 		<div class="form-group">
 			<input type="text" name="email" class="form-control" placeholder="E-mail">
