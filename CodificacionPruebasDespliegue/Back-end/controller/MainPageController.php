@@ -6,7 +6,7 @@ public class MainPageModel extends AbstractController {
 	}
 
 	public function invoke() {
-		if( isset( $_POST['email'] ) && !empty( $_POST['email'] ) && isset( $_POST['password'] ) && !empty( $_POST['password'] ) ) {
+		if( isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['password']) && !empty($_POST['password']) ) {
 			$this->model->login();
 		}
 	}
