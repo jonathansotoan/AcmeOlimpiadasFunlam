@@ -1,5 +1,7 @@
 <?php
-include_once('../model/Persistence/Connection.php');
+if( !isset($mysqli) ) {
+	echo "The file 'Back-end/model/Persistence/Connection.php' is not included and it is required";
+}
 session_start();
 
 if( isset( $_SESSION['rol'] ) && !empty( $_SESSION['rol'] ) ): ?>

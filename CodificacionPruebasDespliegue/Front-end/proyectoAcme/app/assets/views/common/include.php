@@ -33,13 +33,16 @@
           </ul>
         </li>
 	<li class="dropdown">
-        <?php include('../../../../../Back-end/view/LoggedInMenuView.php'); ?>
+        <?php
+		include('../../Back-end/model/Persistence/Connection.php');
+		include('../../Back-end/view/LoggedInMenuView.php');
+	?>
 	<li class="dropdown">
          
           <li><a href="#">Contacto</a></li>
         </li>
       </ul>
-      <?php include('../../../../../Back-end/view/SessionPanelView.php'); ?>
+      <?php include('../../Back-end/view/SessionPanelView.php'); ?>
       <ul class="nav navbar-nav navbar-left">
         
       </ul>
